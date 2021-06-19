@@ -1,2 +1,20 @@
+@font-face {
+  src: url(../../fonts/HomemadeApple-Regular.ttf);
+  font-family: apple; }
+
+@font-face {
+  src: url(../../fonts/Varta-VariableFont_wght.ttf);
+  font-family: varta; }
+
+@font-face {
+  src: url(../../fonts/Varta-Medium.ttf);
+  font-family: varta-midum; }
+
+@font-face {
+  src: url(../../fonts/Varta-Light.ttf);
+  font-family: varta-light; }
+
+* {
+  font-family: varta; }
 
 /*# sourceMappingURL=style.css.map */
