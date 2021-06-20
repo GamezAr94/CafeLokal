@@ -1,0 +1,209 @@
+
+
+.down{
+    background-color: $secondary-color;
+    position: fixed;
+    top: -35px;
+    flex-direction: row;
+    height: 80px;
+    width: 100%;
+    #logo{
+        margin: 0 1em;
+        animation: logoTranslationLeft 1s ease-out 0s 1 normal forwards;
+    }
+    div{
+        .show{
+            background-color: $secondary-color;
+            transform: translateX(-2em) translateY(5em);
+            opacity: 1;
+        }
+    }
+}
+
+@keyframes logoTranslationLeft {
+    0%{
+        transform: translateX(-5em);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0em);
+        opacity: 1;
+    }
+}
+
+@keyframes logoTranslationTop {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+header{
+    z-index: 99999;
+    transition: 1s;
+    height: 120px;
+    position: fixed;
+    width: 100%;
+    background-color: $primary-color;
+    min-height: 4em;
+    padding: 0;
+    display: flex;
+    margin-top: 5vh;
+    flex-direction: column;
+
+    box-shadow: 0px 2px 19px -6px rgba(0,0,0,1);
+    -webkit-box-shadow: 0px 2px 19px -6px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 2px 19px -6px rgba(0,0,0,1);
+
+    #logo{
+        animation: logoTranslationTop 1.7s ease-in-out 0s 1 normal forwards;
+        padding: .5em 0;
+        width: 15%;
+        margin: auto;
+        max-width: 5.5em;
+        min-width: 4em;
+        img{
+            width: auto;
+            transition: 1s;
+        }
+        img:hover{
+            cursor: pointer;
+            transition: 1s;
+            transform: rotateZ(5deg) scale(1.1);
+        }
+    }
+    div{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0 1em;
+        //Beggining of the hamburger button *open*
+        #menuContainer{
+            width: 0;
+            #menu{
+                display: none;
+            }
+            #menu, #menu::before, #menu::after{
+                margin: auto;
+                height: 5px;
+                border-radius: 25%;
+                width: 2em;
+                border: none;
+            }.open{
+                transition: .5s;
+                background-color: $hamburger-color;
+            }
+            .open::before, .open::after{
+                background: inherit;
+            }
+            .open::before{
+                transform: translateY(-10px);
+            }
+            .open::after{
+                transform: translateY(10px);
+            }
+            .open::before, .open::after, .close::before, .close::after{
+                content: '';
+                position: absolute;
+                transition: .3s;
+            }
+            //Beggining of the hamburger button *close*
+            .close{
+                background-color: rgba($hamburger-color, 0);
+            }
+            .close::before, .close::after{
+                background-color: $hamburger-color;
+            }
+            .close::before{
+                transform: translateY(0px) rotateZ(-45deg);
+            }
+            .close::after{
+                transform: translateY(0px) rotateZ(45deg);
+            }
+        }
+        .animated{
+            animation: logoTranslationTop 1s linear 0s 1 normal forwards;
+        }
+        ul{
+            height: 35px;
+            border-radius: 0px 0px 0px 10%;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            width: 100%;
+            max-width: 60em;
+            justify-content: space-evenly;
+            margin: auto;
+            transition: 1s;
+            li{
+                display: flex;
+                text-align: center;
+                a{
+                    text-decoration: none;
+                    color: inherit;
+                    display: inline;
+                    width: 100%;
+                    padding: .5em;
+                }
+            }
+            li:hover{
+                cursor: pointer;
+                border-top: 1.2px solid black;
+                border-bottom: 1.2px solid black;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) and (min-width: 0px){
+    header{
+        flex-direction: row;
+        height: 80px;
+        justify-content: space-between;
+        z-index: 9999;
+        #logo{
+            margin: 0 1em;
+        }
+        div{
+            width: auto;
+            #menuContainer{
+                width: auto;
+                #menu{
+                    display: flex;
+                }
+            }
+            .animated{
+                animation-name: none;
+            }
+            ul{
+                height: auto;
+                position: absolute;
+                flex-direction: column;
+                width: 10em;
+                li{
+                    justify-content: center;
+                    margin: .5em 0;
+                }
+            }
+            .show{
+                background-color: $primary-color;
+                transform: translateX(-2em) translateY(5em);
+                opacity: 1;
+
+                box-shadow: 0px 12px 19px -15px rgba(0,0,0,1);
+                -webkit-box-shadow: 0px 12px 19px -15px rgba(0,0,0,1);
+                -moz-box-shadow: 0px 12px 19px -15px rgba(0,0,0,1);
+            }
+            .hiden{
+                transform: translateX(10em) translateY(2em);
+                opacity: 0;
+            }
+        }
+    }
+}

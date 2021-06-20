@@ -1,10 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{{title}}</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    {{{body}}}
-  </body>
+
+<head>
+  <title>{{title}}</title>
+  <link rel='stylesheet' href='./stylesheets/style.css' />
+  <link rel="stylesheet" href="./stylesheets/normalize.css">
+</head>
+
+<body>
+  <header>
+    <div id="logo"><img src="./images/LOGO.svg" alt="cafe_lokal_LOGO"></div>
+    <div>
+      <div id="menuContainer">
+        <div id="menu" class="open"></div>
+      </div>
+      <ul id="menuList" class="hiden">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Coffee</a></li>
+        <li><a href="#">Food</a></li>
+        <li><a href="#">Drinks</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </div>
+  </header>
+  <div id="cosa">cosa</div>
+  {{{body}}}
+  <div id="test">cosa</div>
+  <script src="./javascripts/script.js"></script>
+</body>
+
 </html>

@@ -1,3 +1,5 @@
+
+
 @font-face {
     src: url(../../fonts/HomemadeApple-Regular.ttf);
     font-family: apple;
@@ -15,3 +17,7 @@
     src: url(../../fonts/Varta-Light.ttf);
     font-family: varta-light;
 } 
+
+$hamburger-color: #242424;
+$primary-color: #fffff7;
+$secondary-color: rgba($primary-color, .8);

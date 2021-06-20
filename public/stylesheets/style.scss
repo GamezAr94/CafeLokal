@@ -1,5 +1,19 @@
-@import "./sass_files/variables.scss";
+@import "./sass_files/_variables.scss";
+@import "./sass_files/_header_footer.scss";
 
 *{
     font-family: varta;
+}
+body{
+    background-color: lightblue;
+    position: relative;
+    overflow-x: hidden;
+    // overflow-y: hidden;
+    #test{
+        margin: 0;
+        padding: auto;
+        margin-top: 1000px;
+        margin-bottom: 0;
+        background-color: red;
+    }
 }
