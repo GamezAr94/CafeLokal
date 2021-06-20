@@ -15,6 +15,7 @@
   font-family: varta-light; }
 
 .down {
+  padding: 0;
   background-color: rgba(255, 255, 247, 0.8);
   position: fixed;
   top: -35px;
@@ -53,10 +54,11 @@ header {
   width: 100%;
   background-color: #fffff7;
   min-height: 4em;
-  padding: 0;
+  padding: 0 0 10px 0;
   display: flex;
   margin-top: 5vh;
   flex-direction: column;
+  justify-content: flex-start;
   box-shadow: 0px 2px 19px -6px black;
   -webkit-box-shadow: 0px 2px 19px -6px black;
   -moz-box-shadow: 0px 2px 19px -6px black; }
@@ -77,8 +79,7 @@ header {
   header div {
     display: flex;
     justify-content: center;
-    width: 100%;
-    margin: 0 1em; }
+    width: 100%; }
     header div #menuContainer {
       width: 0; }
       header div #menuContainer #menu {
@@ -112,34 +113,97 @@ header {
         transform: translateY(0px) rotateZ(45deg); }
     header div .animated {
       animation: logoTranslationTop 1s linear 0s 1 normal forwards; }
-    header div ul {
-      height: 35px;
-      border-radius: 0px 0px 0px 10%;
-      padding: 0;
+    header div nav {
       display: flex;
-      flex-direction: row;
-      list-style: none;
+      margin: auto;
+      height: 34.6px;
       width: 100%;
       max-width: 60em;
-      justify-content: space-evenly;
-      margin: auto;
-      transition: 1s; }
-      header div ul li {
+      justify-content: center; }
+      header div nav ul {
+        font-size: 1em;
+        font-weight: 400;
+        border-radius: 0px 0px 0px 10%;
+        padding: 0;
         display: flex;
-        text-align: center; }
-        header div ul li a {
-          text-decoration: none;
-          color: inherit;
-          display: inline;
-          width: 100%;
-          padding: .5em; }
-      header div ul li:hover {
-        cursor: pointer;
-        border-top: 1.2px solid black;
-        border-bottom: 1.2px solid black; }
+        flex-direction: row;
+        list-style: none;
+        width: 100%;
+        max-width: 60em;
+        justify-content: space-evenly;
+        margin: auto;
+        transition: 1s; }
+        header div nav ul li {
+          display: flex;
+          text-align: center; }
+          header div nav ul li a {
+            color: inherit;
+            display: inline;
+            width: 100%;
+            padding: .5em; }
+        header div nav ul li:hover {
+          cursor: pointer;
+          border-top: 1.2px solid black;
+          border-bottom: 1.2px solid black; }
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: .8em 0;
+  margin: 0;
+  background-color: #fffff7; }
+  footer div {
+    font-size: 1.02em;
+    display: flex;
+    justify-content: flex-start;
+    width: 30%;
+    min-height: 6.3em;
+    min-width: 12em;
+    flex-direction: column; }
+    footer div h3 {
+      text-align: center;
+      width: 100%;
+      border-bottom: 2px solid black;
+      text-transform: uppercase;
+      font-weight: lighter; }
+    footer div div {
+      margin: 0 auto;
+      width: 80%;
+      font-size: .97em; }
+  footer #social div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+  footer #contact a {
+    padding: .6em 0;
+    text-align: center;
+    border: 1px solid black;
+    font-weight: bold;
+    transition: .3s; }
+  footer #contact a:hover {
+    transition: .3s;
+    background-color: #242424;
+    color: #fffff7; }
+  footer #address div {
+    transform: translateY(-15.83px);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 25% auto; }
+    footer #address div a {
+      margin: auto; }
+
+@media only screen and (max-width: 650px) and (min-width: 0px) {
+  footer {
+    flex-direction: column;
+    justify-content: space-between; }
+    footer div {
+      margin: auto;
+      width: 80%; } }
 
 @media only screen and (max-width: 500px) and (min-width: 0px) {
   header {
+    padding: 0;
     flex-direction: row;
     height: 80px;
     justify-content: space-between;
@@ -147,31 +211,35 @@ header {
     header #logo {
       margin: 0 1em; }
     header div {
-      width: auto; }
+      width: auto;
+      margin: 0 .5em; }
       header div #menuContainer {
         width: auto; }
         header div #menuContainer #menu {
           display: flex; }
       header div .animated {
         animation-name: none; }
-      header div ul {
+      header div nav {
         height: auto;
         position: absolute;
-        flex-direction: column;
         width: 10em; }
-        header div ul li {
-          justify-content: center;
-          margin: .5em 0; }
-      header div .show {
-        background-color: #fffff7;
-        transform: translateX(-2em) translateY(5em);
-        opacity: 1;
-        box-shadow: 0px 12px 19px -15px black;
-        -webkit-box-shadow: 0px 12px 19px -15px black;
-        -moz-box-shadow: 0px 12px 19px -15px black; }
-      header div .hiden {
-        transform: translateX(10em) translateY(2em);
-        opacity: 0; } }
+        header div nav ul {
+          height: auto;
+          position: absolute;
+          flex-direction: column; }
+          header div nav ul li {
+            justify-content: center;
+            margin: .5em 0; }
+        header div nav .show {
+          background-color: #fffff7;
+          transform: translateX(-2em) translateY(5em);
+          opacity: 1;
+          box-shadow: 0px 12px 19px -15px black;
+          -webkit-box-shadow: 0px 12px 19px -15px black;
+          -moz-box-shadow: 0px 12px 19px -15px black; }
+        header div nav .hiden {
+          transform: translateX(10em) translateY(2em);
+          opacity: 0; } }
 
 * {
   font-family: varta; }
@@ -180,11 +248,10 @@ body {
   background-color: lightblue;
   position: relative;
   overflow-x: hidden; }
-  body #test {
-    margin: 0;
-    padding: auto;
-    margin-top: 1000px;
-    margin-bottom: 0;
-    background-color: red; }
+  body a {
+    text-decoration: none;
+    color: #242424; }
+  body #cosa {
+    height: 1000px; }
 
 /*# sourceMappingURL=style.css.map */

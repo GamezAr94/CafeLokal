@@ -1,6 +1,7 @@
 
 
 .down{
+    padding: 0;
     background-color: $secondary-color;
     position: fixed;
     top: -35px;
@@ -51,10 +52,11 @@ header{
     width: 100%;
     background-color: $primary-color;
     min-height: 4em;
-    padding: 0;
+    padding: 0 0 10px 0;
     display: flex;
     margin-top: 5vh;
     flex-direction: column;
+    justify-content: flex-start;
 
     box-shadow: 0px 2px 19px -6px rgba(0,0,0,1);
     -webkit-box-shadow: 0px 2px 19px -6px rgba(0,0,0,1);
@@ -81,7 +83,6 @@ header{
         display: flex;
         justify-content: center;
         width: 100%;
-        margin: 0 1em;
         //Beggining of the hamburger button *open*
         #menuContainer{
             width: 0;
@@ -129,40 +130,121 @@ header{
         .animated{
             animation: logoTranslationTop 1s linear 0s 1 normal forwards;
         }
-        ul{
-            height: 35px;
-            border-radius: 0px 0px 0px 10%;
-            padding: 0;
+        nav{
             display: flex;
-            flex-direction: row;
-            list-style: none;
+            margin: auto;
+            height: 34.6px;
             width: 100%;
             max-width: 60em;
-            justify-content: space-evenly;
-            margin: auto;
-            transition: 1s;
-            li{
+            justify-content: center;
+            ul{
+                font-size: 1em;
+                font-weight: 400;
+                border-radius: 0px 0px 0px 10%;
+                padding: 0;
                 display: flex;
-                text-align: center;
-                a{
-                    text-decoration: none;
-                    color: inherit;
-                    display: inline;
-                    width: 100%;
-                    padding: .5em;
+                flex-direction: row;
+                list-style: none;
+                width: 100%;
+                max-width: 60em;
+                justify-content: space-evenly;
+                margin: auto;
+                transition: 1s;
+                li{
+                    display: flex;
+                    text-align: center;
+                    a{
+                        color: inherit;
+                        display: inline;
+                        width: 100%;
+                        padding: .5em;
+                    }
                 }
-            }
-            li:hover{
-                cursor: pointer;
-                border-top: 1.2px solid black;
-                border-bottom: 1.2px solid black;
-            }
+                li:hover{
+                    cursor: pointer;
+                    border-top: 1.2px solid black;
+                    border-bottom: 1.2px solid black;
+                }
+            }   
         }
     }
 }
 
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: .8em 0;
+    margin: 0;
+    background-color: $primary-color;
+    div{
+        font-size: 1.02em;
+        display: flex;
+        justify-content: flex-start;
+        width: 30%;
+        min-height: 6.3em;
+        min-width: 12em;
+        flex-direction: column;
+        h3{
+            text-align: center;
+            width: 100%;
+            border-bottom: 2px solid black;
+            text-transform: uppercase;
+            font-weight: lighter;
+        }
+        div{
+            margin: 0 auto;
+            width: 80%;
+            font-size: .97em;
+        }
+    }
+    #social{
+        div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+    #contact{
+        a{
+            padding: .6em 0;
+            text-align: center;
+            border:1px solid black;
+            font-weight: bold;
+            transition: .3s;
+        }
+        a:hover{
+            transition: .3s;
+            background-color: $hamburger-color;
+            color: $primary-color;
+        }
+    }
+    #address{
+        div{
+            transform: translateY(-15.830px);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 25% auto;
+            a{
+                margin: auto;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 650px) and (min-width: 0px){
+    footer{
+        flex-direction: column;
+        justify-content: space-between;
+        div{
+            margin: auto;
+            width: 80%;
+        }
+
+    }
+}
 @media only screen and (max-width: 500px) and (min-width: 0px){
     header{
+        padding: 0;
         flex-direction: row;
         height: 80px;
         justify-content: space-between;
@@ -172,6 +254,7 @@ header{
         }
         div{
             width: auto;
+            margin: 0 .5em;
             #menuContainer{
                 width: auto;
                 #menu{
@@ -181,28 +264,33 @@ header{
             .animated{
                 animation-name: none;
             }
-            ul{
+            nav{
                 height: auto;
                 position: absolute;
-                flex-direction: column;
                 width: 10em;
-                li{
-                    justify-content: center;
-                    margin: .5em 0;
+                ul{
+                    height: auto;
+                    position: absolute;
+                    flex-direction: column;
+                    li{
+                        justify-content: center;
+                        margin: .5em 0;
+                    }
                 }
-            }
-            .show{
-                background-color: $primary-color;
-                transform: translateX(-2em) translateY(5em);
-                opacity: 1;
+                .show{
+                    background-color: $primary-color;
+                    transform: translateX(-2em) translateY(5em);
+                    opacity: 1;
 
-                box-shadow: 0px 12px 19px -15px rgba(0,0,0,1);
-                -webkit-box-shadow: 0px 12px 19px -15px rgba(0,0,0,1);
-                -moz-box-shadow: 0px 12px 19px -15px rgba(0,0,0,1);
-            }
-            .hiden{
-                transform: translateX(10em) translateY(2em);
-                opacity: 0;
+                    box-shadow: 0px 12px 19px -15px rgba(0,0,0,1);
+                    -webkit-box-shadow: 0px 12px 19px -15px rgba(0,0,0,1);
+                    -moz-box-shadow: 0px 12px 19px -15px rgba(0,0,0,1);
+                }
+                .hiden{
+                    transform: translateX(10em) translateY(2em);
+                    opacity: 0;
+                }
+            
             }
         }
     }

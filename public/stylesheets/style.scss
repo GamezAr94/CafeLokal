@@ -5,15 +5,14 @@
     font-family: varta;
 }
 body{
+    a{
+        text-decoration: none;
+        color: $hamburger-color;
+    }
     background-color: lightblue;
     position: relative;
     overflow-x: hidden;
-    // overflow-y: hidden;
-    #test{
-        margin: 0;
-        padding: auto;
-        margin-top: 1000px;
-        margin-bottom: 0;
-        background-color: red;
+    #cosa{
+        height: 1000px;
     }
 }
