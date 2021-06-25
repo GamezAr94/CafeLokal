@@ -3,8 +3,10 @@ const menu_container = document.getElementById('menuContainer');
 const menu_list = document.getElementById('menuList');
 const header = document.getElementsByTagName('header');
 
+const header_limit = 580;
+
 document.addEventListener('scroll', ()=> {
-    if(window.pageYOffset >= 50){
+    if(window.pageYOffset >= header_limit){
         header[0].classList.add('down');
         menu_list.classList.remove('animated');
     }else{

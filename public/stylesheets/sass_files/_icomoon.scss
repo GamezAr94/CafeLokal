@@ -1,0 +1,122 @@
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('../../#{$icomoon-font-path}/#{$icomoon-font-family}.eot?csxpeq');
+  src:  url('../../#{$icomoon-font-path}/#{$icomoon-font-family}.eot?csxpeq#iefix') format('embedded-opentype'),
+    url('../../#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?csxpeq') format('truetype'),
+    url('../../#{$icomoon-font-path}/#{$icomoon-font-family}.woff?csxpeq') format('woff'),
+    url('../../#{$icomoon-font-path}/#{$icomoon-font-family}.svg?csxpeq##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook {
+  &:before {
+    content: $icon-facebook;     
+    color: #1877f2;
+  }
+}
+.icon-gmail {
+  &:before {
+    content: $icon-gmail;     
+    color: #d14836;
+  }
+}
+.icon-d1 {
+  &:before {
+    content: $icon-d1; 
+  }
+}
+.icon-d2 {
+  &:before {
+    content: $icon-d2; 
+  }
+}
+.icon-d3 {
+  &:before {
+    content: $icon-d3; 
+  }
+}
+.icon-d4 {
+  &:before {
+    content: $icon-d4; 
+  }
+}
+.icon-LOGO {
+  &:before {
+    content: $icon-LOGO; 
+  }
+}
+.icon-pencil {
+  &:before {
+    content: $icon-pencil; 
+  }
+}
+.icon-image {
+  &:before {
+    content: $icon-image; 
+  }
+}
+.icon-images {
+  &:before {
+    content: $icon-images; 
+  }
+}
+.icon-folder-upload {
+  &:before {
+    content: $icon-folder-upload; 
+  }
+}
+.icon-phone {
+  &:before {
+    content: $icon-phone; 
+  }
+}
+.icon-location {
+  &:before {
+    content: $icon-location; 
+  }
+  color: #1856ff;
+}
+.icon-location2 {
+  &:before {
+    content: $icon-location2; 
+  }
+}
+.icon-cross {
+  &:before {
+    content: $icon-cross; 
+  }
+}
+.icon-checkmark {
+  &:before {
+    content: $icon-checkmark; 
+  }
+}
+.icon-facebook1 {
+  &:before {
+    content: $icon-facebook1; 
+  }
+}
+.icon-instagram {
+  &:before {
+    content: $icon-instagram; 
+  }
+  color: rgb(255, 52, 52);
+}
+

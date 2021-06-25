@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   src: url(../../fonts/HomemadeApple-Regular.ttf);
   font-family: apple; }
@@ -150,7 +151,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: .8em 0;
+  padding: .8em 0 1em 0;
   margin: 0;
   background-color: #fffff7; }
   footer div {
@@ -171,27 +172,39 @@ footer {
       margin: 0 auto;
       width: 80%;
       font-size: .97em; }
+  footer #social a, footer #address a {
+    height: auto;
+    padding: .5rem; }
+    footer #social a span, footer #address a span {
+      font-size: 1.7rem; }
   footer #social div {
     display: flex;
     flex-direction: row;
-    justify-content: space-around; }
+    justify-content: space-around;
+    align-items: flex-start; }
   footer #contact a {
     padding: .6em 0;
     text-align: center;
     border: 1px solid black;
     font-weight: bold;
-    transition: .3s; }
+    transition: .3s;
+    font-size: 1.2rem; }
   footer #contact a:hover {
     transition: .3s;
     background-color: #242424;
     color: #fffff7; }
   footer #address div {
-    transform: translateY(-15.83px);
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 25% auto; }
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; }
+    footer #address div a:nth-child(2) {
+      margin: 1rem 0; }
     footer #address div a {
-      margin: auto; }
+      display: flex;
+      align-items: center; }
+      footer #address div a span {
+        margin-right: 1.5rem; }
 
 @media only screen and (max-width: 650px) and (min-width: 0px) {
   footer {
@@ -240,6 +253,87 @@ footer {
         header div nav .hiden {
           transform: translateX(10em) translateY(2em);
           opacity: 0; } }
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../../fonts/icomoon.eot?csxpeq");
+  src: url("../../fonts/icomoon.eot?csxpeq#iefix") format("embedded-opentype"), url("../../fonts/icomoon.ttf?csxpeq") format("truetype"), url("../../fonts/icomoon.woff?csxpeq") format("woff"), url("../../fonts/icomoon.svg?csxpeq#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-facebook:before {
+  content: "";
+  color: #1877f2; }
+
+.icon-gmail:before {
+  content: "";
+  color: #d14836; }
+
+.icon-d1:before {
+  content: ""; }
+
+.icon-d2:before {
+  content: ""; }
+
+.icon-d3:before {
+  content: ""; }
+
+.icon-d4:before {
+  content: ""; }
+
+.icon-LOGO:before {
+  content: ""; }
+
+.icon-pencil:before {
+  content: ""; }
+
+.icon-image:before {
+  content: ""; }
+
+.icon-images:before {
+  content: ""; }
+
+.icon-folder-upload:before {
+  content: ""; }
+
+.icon-phone:before {
+  content: ""; }
+
+.icon-location {
+  color: #1856ff; }
+  .icon-location:before {
+    content: ""; }
+
+.icon-location2:before {
+  content: ""; }
+
+.icon-cross:before {
+  content: ""; }
+
+.icon-checkmark:before {
+  content: ""; }
+
+.icon-facebook1:before {
+  content: ""; }
+
+.icon-instagram {
+  color: #ff3434; }
+  .icon-instagram:before {
+    content: ""; }
 
 * {
   font-family: varta; }
