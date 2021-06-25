@@ -3,13 +3,21 @@ const menu_container = document.getElementById('menuContainer');
 const menu_list = document.getElementById('menuList');
 const header = document.getElementsByTagName('header');
 
-const header_limit = 580;
+const header_limit = 80;
+
+const headerMovement = function(){
+    header[0].classList.contains('down') ? header[0].style.marginTop = 7 +"vh" : header[0].style.marginTop = 5+ "vh";
+}
+
+headerMovement();
 
 document.addEventListener('scroll', ()=> {
     if(window.pageYOffset >= header_limit){
+        header[0].style.marginTop = 5 + "vh";
         header[0].classList.add('down');
         menu_list.classList.remove('animated');
     }else{
+        header[0].style.marginTop = ((-window.pageYOffset * 10) / (header_limit*1.5))+5 +"vh";
         header[0].classList.remove('down');
         menu_list.classList.add('animated');
     }

@@ -54,7 +54,6 @@ header{
     min-height: 4em;
     padding: 0 0 10px 0;
     display: flex;
-    margin-top: 5vh;
     flex-direction: column;
     justify-content: flex-start;
 
@@ -284,6 +283,7 @@ footer{
     header{
         padding: 0;
         flex-direction: row;
+        top: 0;
         height: 80px;
         justify-content: space-between;
         z-index: 9999;
