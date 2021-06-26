@@ -1,0 +1,51 @@
+#background{
+    margin: 0;
+    padding-top: 30vh;
+    width: 100%;
+    min-height: 100vh;
+    background-color: green;
+    #container{
+        border: 3.1rem solid black;
+        background-color: lightblue;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        display: flex;
+        margin: auto;
+        #title{
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            flex-direction: row;
+            h1{
+                background-color: #fff;
+                margin: auto 0px;
+                text-align: center;
+            }
+            h1::before, h1::after{
+                content: '●';
+                flex-direction: column;
+                font-size: 1.3rem;
+                margin: auto .5rem;
+            }
+            span{
+                font-size: 8rem;
+            }
+        }
+        div{
+            display: flex;
+            border: 1px solid black;
+            width: 85%;
+            flex-direction: row;
+            background-color: #fff;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            justify-content: space-between;
+            div{
+                width: 30%;
+                min-width: 20rem;
+                margin: 0;
+            }
+        }
+    }
+}

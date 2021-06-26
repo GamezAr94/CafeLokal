@@ -2,14 +2,13 @@ const hamburger_menu = document.getElementById('menu');
 const menu_container = document.getElementById('menuContainer');
 const menu_list = document.getElementById('menuList');
 const header = document.getElementsByTagName('header');
+const main_logo = document.getElementById('logo');
 
 const header_limit = 80;
 
-const headerMovement = function(){
-    header[0].classList.contains('down') ? header[0].style.marginTop = 7 +"vh" : header[0].style.marginTop = 5+ "vh";
-}
+main_logo.addEventListener('click', () => window.location = "/")
 
-headerMovement();
+header[0].classList.contains('down') ? header[0].style.marginTop = 7 +"vh" : header[0].style.marginTop = 5+ "vh";
 
 document.addEventListener('scroll', ()=> {
     if(window.pageYOffset >= header_limit){

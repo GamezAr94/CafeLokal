@@ -1,19 +1,16 @@
 @import "./sass_files/_variables.scss";
 @import "./sass_files/_header_footer.scss";
 @import "./sass_files/_icomoon.scss";
+@import "./sass_files/_menu.scss";
 
 *{
     font-family: varta;
-}
-body{
     a{
         text-decoration: none;
         color: $hamburger-color;
     }
+}
+body{
     background-color: lightblue;
-    position: relative;
     overflow-x: hidden;
-    #cosa{
-        height: 1000px;
-    }
 }
