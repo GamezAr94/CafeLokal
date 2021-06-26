@@ -1,0 +1,211 @@
+{
+    "menu": {
+        "title": "Coffee and Tea",
+        "content": {
+            "size": [
+                "S",
+                "M",
+                "L"
+            ],
+            "add_ons": [
+                {
+                    "name": "Add Soy,Almond,Oat",
+                    "price": 0.6
+                },
+                {
+                    "name": "Add Baileys",
+                    "price": 3.00
+                },
+                {
+                    "name": "Add flavor shot",
+                    "price": 0.40
+                },
+                {
+                    "name": "Add Ice Cream Scoop",
+                    "price": 2.00
+                }
+            ],
+            "coffee": {
+                "title": "Coffee",
+                "items_single": [
+                    {
+                        "name": "Ristretto",
+                        "price": 3.00,
+                        "iced": false
+                    },
+                    {
+                        "name": "Espresso",
+                        "price": 3.00,
+                        "iced": true
+                    },
+                    {
+                        "name": "Macchiato",
+                        "price": 3.30,
+                        "iced": false
+                    },
+                    {
+                        "name": "Cortado",
+                        "price": 3.60,
+                        "iced": false
+                    },
+                    {
+                        "name": "Cappuccino",
+                        "price": 3.90,
+                        "iced": false
+                    },
+                    {
+                        "name": "Flat White",
+                        "price": 4.00,
+                        "iced": false
+                    },
+                    {
+                        "name": "Babyccino",
+                        "price": 1.00,
+                        "iced": false
+                    }
+                ],
+                "items_multiple": [
+                    {
+                        "name": "Latte",
+                        "price": [
+                            3.8,
+                            4.2,
+                            4.6
+                        ],
+                        "iced": true
+                    },
+                    {
+                        "name": "Americano",
+                        "price": [
+                            3.1,
+                            3.1,
+                            3.6
+                        ],
+                        "iced": true
+                    },
+                    {
+                        "name": "Misto",
+                        "price": [
+                            3.4,
+                            3.4,
+                            3.9
+                        ],
+                        "iced": false
+                    },
+                    {
+                        "name": "Mocha",
+                        "price": [
+                            4.3,
+                            4.7,
+                            5
+                        ],
+                        "iced": true
+                    },
+                    {
+                        "name": "Chocolate",
+                        "price": [
+                            3,
+                            3.5,
+                            4
+                        ],
+                        "iced": true
+                    }
+                ]
+            },
+            "tea_latte": {
+                "title": "Tea Latte",
+                "items": [
+                    {
+                        "name": "London Fog",
+                        "price": 4.8
+                    },
+                    {
+                        "name": "Herbal Chai Tea Latte",
+                        "price": 4.4
+                    },
+                    {
+                        "name": "Matcha Latte",
+                        "price": [
+                            4.75,
+                            5.25
+                        ]
+                    }
+                ]
+            },
+            "loose_leaf": {
+                "title": "Loose Leaf Tea",
+                "items": [
+                    {
+                        "name": "Black",
+                        "price": 3.5,
+                        "desc": [
+                            "English Breakfast",
+                            "Flowery Earl Grey",
+                            "Decaf Earl Grey",
+                            "Imperial Orange Pekoe"
+                        ]
+                    },
+                    {
+                        "name": "Green",
+                        "price": 3.4,
+                        "desc": [
+                            "Organic Health and Well Being Green Tea",
+                            "Organic Pear Tree Green Tea"
+                        ]
+                    },
+                    {
+                        "name": "Matcha Tea",
+                        "price": 4.25,
+                        "desc": []
+                    },
+                    {
+                        "name": "Herbal",
+                        "price": 3.4,
+                        "desc": [
+                            "Organic Chamomile Flowers",
+                            "Organic Peppermint",
+                            "Herbal Spiced Chai",
+                            "Organic Rooibos Vanilla",
+                            "Mountain Berry",
+                            "Ginger Yuzu"
+                        ]
+                    }
+                ]
+            },
+            "iced_drinks": {
+                "title": "Cold Drinks",
+                "items": [
+                    {
+                        "name": "Iced Loose Leaf Tea",
+                        "price": 3.4
+                    },
+                    {
+                        "name": "Affogato al Caffe-Vanilla Gelato, Espresso",
+                        "price": 5.5
+                    }
+                ]
+            },
+            "sodas_juices": {
+                "title": "Sodas and Juices",
+                "items": [
+                    {
+                        "name": "Sparkling Water, Flat Water",
+                        "price": 2.5
+                    },
+                    {
+                        "name": "Aranciata, Aranciata Rossa, Limonata",
+                        "price": 2.75
+                    },
+                    {
+                        "name": "Coca Cola,Nestea Iced Tea",
+                        "price": 2.75
+                    },
+                    {
+                        "name": "Orange Juice, Apple Juice",
+                        "price": 2.25
+                    }
+                ]
+            }
+        }
+    }
+}
