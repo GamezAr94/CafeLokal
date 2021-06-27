@@ -349,12 +349,14 @@ footer {
 
 #background {
   margin: 0;
-  padding-top: 30vh;
+  transition: .3s;
+  padding-top: 15rem;
   width: 100%;
   min-height: 100vh;
   background-color: green; }
   #background #container {
-    border: 3.1rem solid black;
+    padding: 2rem 0;
+    border: 3rem solid black;
     background-color: lightblue;
     display: flex;
     flex-direction: column;
@@ -365,9 +367,10 @@ footer {
       display: flex;
       width: 100%;
       justify-content: space-around;
-      flex-direction: row; }
+      flex-direction: row;
+      margin-bottom: 2rem; }
       #background #container #title h1 {
-        background-color: #fff;
+        font-size: 2.9rem;
         margin: auto 0px;
         text-align: center; }
       #background #container #title h1::before, #background #container #title h1::after {
@@ -377,19 +380,87 @@ footer {
         margin: auto .5rem; }
       #background #container #title span {
         font-size: 8rem; }
-    #background #container div {
-      display: flex;
-      border: 1px solid black;
-      width: 85%;
-      flex-direction: row;
-      background-color: #fff;
-      flex-wrap: wrap;
-      margin: 0 auto;
-      justify-content: space-between; }
-      #background #container div div {
-        width: 30%;
-        min-width: 20rem;
-        margin: 0; }
+    #background #container #board {
+      display: grid;
+      margin: auto;
+      width: 90%;
+      grid-template-columns: auto auto auto;
+      column-gap: 4rem;
+      row-gap: 1.5em; }
+      #background #container #board #multiple .sizes {
+        display: flex;
+        flex-direction: row;
+        width: 7.5rem;
+        min-width: 0;
+        margin: 0 0 0 auto; }
+        #background #container #board #multiple .sizes p {
+          margin: 0 auto 0 auto; }
+      #background #container #board #multiple .item {
+        grid-template-columns: auto 7rem; }
+        #background #container #board #multiple .item .prices {
+          min-width: 0px;
+          display: grid;
+          grid-template-columns: auto auto auto;
+          column-gap: 1rem; }
+          #background #container #board #multiple .item .prices p {
+            padding: 0;
+            margin: 0; }
+      #background #container #board div {
+        height: fit-content;
+        min-width: 300px; }
+        #background #container #board div .item {
+          display: grid;
+          grid-template-columns: auto 3.7rem;
+          column-gap: .5rem;
+          margin-bottom: 1.5rem; }
+          #background #container #board div .item p {
+            margin: 0;
+            font-weight: bold; }
+          #background #container #board div .item p:nth-child(2) {
+            margin: auto;
+            font-weight: bold; }
+          #background #container #board div .item .description {
+            width: 100%;
+            border-top: .15rem dashed white;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3; }
+            #background #container #board div .item .description p {
+              text-align: start;
+              color: red;
+              font-weight: normal; }
+
+@media only screen and (max-width: 1436px) and (min-width: 740px) {
+  #background #container {
+    border: 2.4rem solid black; }
+    #background #container #title h1 {
+      font-size: 2rem; }
+    #background #container #board {
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto auto; } }
+
+@media only screen and (max-width: 930px) and (min-width: 0px) {
+  #background #container {
+    border: 1.6rem solid black;
+    width: 75%; }
+    #background #container #title {
+      flex-direction: column; }
+      #background #container #title span {
+        width: fit-content;
+        margin: auto; }
+    #background #container #board {
+      grid-template-columns: auto;
+      grid-template-rows: auto auto auto; }
+      #background #container #board div {
+        min-width: 0; } }
+
+@media only screen and (max-width: 500px) and (min-width: 0px) {
+  #background {
+    padding-top: 10rem; }
+    #background #container #title h1 {
+      font-size: 1.3rem;
+      white-space: nowrap; } }
 
 * {
   font-family: varta; }

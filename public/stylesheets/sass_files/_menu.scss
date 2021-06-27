@@ -1,11 +1,13 @@
 #background{
     margin: 0;
-    padding-top: 30vh;
+    transition: .3s;
+    padding-top: 15rem;
     width: 100%;
     min-height: 100vh;
     background-color: green;
     #container{
-        border: 3.1rem solid black;
+        padding: 2rem 0;
+        border: 3rem solid black;
         background-color: lightblue;
         display: flex;
         flex-direction: column;
@@ -17,8 +19,9 @@
             width: 100%;
             justify-content: space-around;
             flex-direction: row;
+            margin-bottom: 2rem;
             h1{
-                background-color: #fff;
+                font-size: 2.9rem;
                 margin: auto 0px;
                 text-align: center;
             }
@@ -32,19 +35,122 @@
                 font-size: 8rem;
             }
         }
-        div{
-            display: flex;
-            border: 1px solid black;
-            width: 85%;
-            flex-direction: row;
-            background-color: #fff;
-            flex-wrap: wrap;
-            margin: 0 auto;
-            justify-content: space-between;
+        #board{
+            display: grid;
+            margin: auto;
+            width: 90%;
+            grid-template-columns: auto auto auto;
+            column-gap: 4rem;
+            row-gap: 1.5em;
+            #multiple{
+                .sizes{
+                    display: flex;
+                    flex-direction: row;
+                    width: 7.5rem;
+                    min-width: 0;
+                    margin: 0 0 0 auto;
+                    p{
+                        margin: 0 auto 0 auto;
+                    }
+                }
+                .item{
+                    grid-template-columns: auto 7rem;
+                    .prices{
+                        min-width: 0px;
+                        display: grid;
+                        grid-template-columns: auto auto auto;
+                        column-gap: 1rem;
+                        p{
+                            padding: 0;
+                            margin: 0;
+
+                        }
+                    }
+                }
+            }
             div{
-                width: 30%;
-                min-width: 20rem;
-                margin: 0;
+                height: fit-content;
+                min-width: 300px;
+                .item{
+                    display: grid;
+                    grid-template-columns: auto 3.7rem;
+                    column-gap: .5rem;
+                    margin-bottom: 1.5rem;
+                    p{
+                        margin: 0;
+                        font-weight: bold;
+                    }
+                    p:nth-child(2){
+                        margin: auto;
+                        font-weight: bold;
+                    }
+                    .description{
+                        width: 100%;
+                        border-top: .15rem dashed white;
+                        grid-column-start: 1;
+                        grid-column-end: 3;
+                        grid-row-start: 2;
+                        grid-row-end: 3;
+                        p{
+                            text-align: start;
+                            color: red;
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1436px) and (min-width: 740px){
+    #background{
+        #container{
+            border: 2.4rem solid black;
+            #title{
+                h1{
+                    font-size: 2rem;
+                }
+            }
+            #board{
+                grid-template-columns: auto auto;
+                grid-template-rows: auto auto auto;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 930px) and (min-width: 0px){
+    #background{
+        #container{
+            border: 1.6rem solid black;
+            width: 75%;
+            #title{
+                flex-direction: column;
+                span{
+                    width: fit-content;
+                    margin: auto;
+                }
+            }
+            #board{
+                grid-template-columns: auto;
+                grid-template-rows: auto auto auto;
+                div{
+                    min-width: 0;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 500px) and (min-width: 0px){
+    #background{
+        padding-top: 10rem;
+        #container{
+            #title{
+                h1{
+                    font-size: 1.3rem;
+                    white-space: nowrap;
+                }
             }
         }
     }

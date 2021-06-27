@@ -4,10 +4,135 @@
             <h1>{{title}}</h1>
             <span class="icon-d2"></span>
         </div>
-        <div>
-            <div>uno</div>
-            <div>dos</div>
-            <div>tres</div>
+        <div id="board">
+
+            <div>
+                <h3>{{menu_builder.menu.content.coffee.title}}</h3>
+                {{#each menu_builder.menu.content.coffee.item_single}}
+                <div class="item">
+                    <p>{{name}}</p>
+                    <p>{{price}}</p>
+                    <div class="description">
+                        <!--item description-->
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+
+            <div id="multiple">
+                <h3>{{menu_builder.menu.content.coffee.title}}</h3>
+                <div class="sizes">
+                    {{#each menu_builder.menu.content.coffee.size}}
+                    <p>{{this}}</p>
+                    {{/each}}
+                </div>
+                {{#each menu_builder.menu.content.coffee.item_multiple}}
+                <div class="item">
+                    <p>{{name}}</p>
+                    <div class="prices">
+                        {{#each price}}
+                        <p>{{this}}</p>
+                        {{/each}}
+                    </div>
+                    <div class="description">
+                        <!--item description-->
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+
+            <div>
+                <h3>{{menu_builder.menu.content.tea_latte.title}}</h3>
+                {{#each menu_builder.menu.content.tea_latte.items}}
+                <div class="item">
+                    <p>{{name}}</p>
+                    <p>{{price}}</p>
+                    <div class="description">
+                        <!--item description-->
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+
+            <div>
+                <h3>{{menu_builder.menu.content.loose_leaf.title}}</h3>
+                {{#each menu_builder.menu.content.loose_leaf.items}}
+                <div class="item">
+                    <p>{{name}}</p>
+                    <p>{{price}}</p>
+                    <div class="description">
+                        <!--item description-->
+                        {{#each desc}}
+                        <p>{{this}}</p>
+                        {{/each}}
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+
+            <div>
+                <h3>{{menu_builder.menu.content.iced_drinks.title}}</h3>
+                {{#each menu_builder.menu.content.coffee.item_single}}
+                {{#if iced}}
+                <div class="item">
+                    <p>{{name}}</p>
+                    <p>{{price}}</p>
+                    <div class="description">
+                        <!--item description-->
+                    </div>
+                </div>
+                {{/if}}
+                {{/each}}
+
+                {{#each menu_builder.menu.content.coffee.item_multiple}}
+                {{#if iced}}
+                <div class="item">
+                    <p>{{name}}</p>
+                    <p>{{price.[1]}}</p>
+                    <div class="description">
+                        <!--item description-->
+                    </div>
+                </div>
+                {{/if}}
+                {{/each}}
+
+                {{#each menu_builder.menu.content.iced_drinks.items}}
+                <div class="item">
+                    <p>{{name}}</p>
+                    <p>{{price}}</p>
+                    <div class="description">
+                        <!--item description-->
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+
+            <div>
+                <h3>{{menu_builder.menu.content.sodas_juices.title}}</h3>
+                {{#each menu_builder.menu.content.sodas_juices.items}}
+                <div class="item">
+                    <p>{{name}}</p>
+                    <p>{{price}}</p>
+                    <div class="description">
+                        <!--item description-->
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+
+            <div>
+                <h3>{{menu_builder.menu.content.add_ons.title}}</h3>
+                {{#each menu_builder.menu.content.add_ons.items}}
+                <div class="item">
+                    <p>{{name}}</p>
+                    <p>{{price}}</p>
+                    <div class="description">
+                        <!--item description-->
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+
         </div>
     </div>
 </section>

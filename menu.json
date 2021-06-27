@@ -2,35 +2,38 @@
     "menu": {
         "title": "Coffee and Tea",
         "content": {
-            "size": [
-                "S",
-                "M",
-                "L"
-            ],
-            "add_ons": [
-                {
-                    "name": "Add Soy,Almond,Oat",
-                    "price": 0.6
-                },
-                {
-                    "name": "Add Baileys",
-                    "price": 3.00
-                },
-                {
-                    "name": "Add flavor shot",
-                    "price": 0.40
-                },
-                {
-                    "name": "Add Ice Cream Scoop",
-                    "price": 2.00
-                }
-            ],
+            "add_ons": {
+                "title": "Added",
+                "items": [
+                    {
+                        "name": "Add Soy, Almond, Oat",
+                        "price": 0.6
+                    },
+                    {
+                        "name": "Add Baileys",
+                        "price": 3.00
+                    },
+                    {
+                        "name": "Add flavor shot",
+                        "price": 0.40
+                    },
+                    {
+                        "name": "Add Ice Cream Scoop",
+                        "price": 2.00
+                    }
+                ]
+            },
             "coffee": {
                 "title": "Coffee",
-                "items_single": [
+                "size": [
+                    "S",
+                    "M",
+                    "L"
+                ],
+                "item_single": [
                     {
                         "name": "Ristretto",
-                        "price": 3.00,
+                        "price": 3,
                         "iced": false
                     },
                     {
@@ -64,7 +67,7 @@
                         "iced": false
                     }
                 ],
-                "items_multiple": [
+                "item_multiple": [
                     {
                         "name": "Latte",
                         "price": [
