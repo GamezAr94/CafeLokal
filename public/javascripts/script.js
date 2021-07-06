@@ -1,3 +1,5 @@
+'use strict';
+
 const hamburger_menu = document.getElementById('menu');
 const menu_container = document.getElementById('menuContainer');
 const menu_list = document.getElementById('menuList');

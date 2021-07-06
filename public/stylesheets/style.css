@@ -461,7 +461,7 @@ footer {
       font-size: 3em;
       text-align: center;
       width: 80%;
-      border-bottom: 1px solid #c79c60; }
+      border-bottom: 2px solid #c79c60; }
     #background #info span {
       font-size: 3.5em;
       color: #c79c60; }
@@ -538,6 +538,7 @@ footer {
     color: #242424; }
 
 body {
+  background-color: lightblue;
   overflow-x: hidden; }
 
 /*# sourceMappingURL=style.css.map */

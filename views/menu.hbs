@@ -138,14 +138,12 @@
     </div>
     <div id="info">
         <div>
-            <h3>Our coffee</h3>
-            <span class="icon-N"></span>
+            <h3>{{menu_builder.menu.description.title}}</h3>
+            <span class={{menu_builder.menu.description.icon}}></span>
             <div>
-                <p>At Lokal we are firm believers in espresso and we are proudly serving coffee from Casa del Caffe'.
-                </p>
-                <p>Our beans Espresso Roma are 100%arabica with a medium strenght, leaving a bold flavor on the palate.
-                </p>
-                <p>Our decaf Dormi Bene is Swiss water processed and 97% caffeine free.</p>
+                {{#each menu_builder.menu.description.desc}}
+                <p>{{this}}</p>
+                {{/each}}
             </div>
         </div>
     </div>
