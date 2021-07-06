@@ -8,26 +8,29 @@
         <div id="board">
 
             <div>
-                <h3>{{menu_builder.menu.content.coffee.title}}</h3>
-                {{#each menu_builder.menu.content.coffee.item_single}}
+                <h3>{{menu_builder.content.main.item_single_title}}</h3>
+                {{#each menu_builder.content.main.item_single}}
                 <div class="item">
                     <p>{{name}}</p>
                     <p>{{price}}</p>
                     <div class="description">
                         <!--item description-->
+                        {{#each desc}}
+                        <p>{{this}}</p>
+                        {{/each}}
                     </div>
                 </div>
                 {{/each}}
             </div>
 
             <div id="multiple">
-                <h3>{{menu_builder.menu.content.coffee.title}}</h3>
+                <h3>{{menu_builder.content.main.item_multiple_title}}</h3>
                 <div class="sizes">
-                    {{#each menu_builder.menu.content.coffee.size}}
+                    {{#each menu_builder.content.main.size}}
                     <p>{{this}}</p>
                     {{/each}}
                 </div>
-                {{#each menu_builder.menu.content.coffee.item_multiple}}
+                {{#each menu_builder.content.main.item_multiple}}
                 <div class="item">
                     <p>{{name}}</p>
                     <div class="prices">
@@ -37,27 +40,18 @@
                     </div>
                     <div class="description">
                         <!--item description-->
+                        {{#each desc}}
+                        <p>{{this}}</p>
+                        {{/each}}
                     </div>
                 </div>
                 {{/each}}
             </div>
 
             <div>
-                <h3>{{menu_builder.menu.content.tea_latte.title}}</h3>
-                {{#each menu_builder.menu.content.tea_latte.items}}
-                <div class="item">
-                    <p>{{name}}</p>
-                    <p>{{price}}</p>
-                    <div class="description">
-                        <!--item description-->
-                    </div>
-                </div>
-                {{/each}}
-            </div>
-
-            <div>
-                <h3>{{menu_builder.menu.content.loose_leaf.title}}</h3>
-                {{#each menu_builder.menu.content.loose_leaf.items}}
+                <h3>{{menu_builder.content.secondary.title}}</h3>
+                <p>{{menu_builder.content.secondary.desc}}</p>
+                {{#each menu_builder.content.secondary.items}}
                 <div class="item">
                     <p>{{name}}</p>
                     <p>{{price}}</p>
@@ -72,8 +66,26 @@
             </div>
 
             <div>
-                <h3>{{menu_builder.menu.content.iced_drinks.title}}</h3>
-                {{#each menu_builder.menu.content.coffee.item_single}}
+                <h3>{{menu_builder.content.third.title}}</h3>
+                <p>{{menu_builder.content.third.desc}}</p>
+                {{#each menu_builder.content.third.items}}
+                <div class="item">
+                    <p>{{name}}</p>
+                    <p>{{price}}</p>
+                    <div class="description">
+                        <!--item description-->
+                        {{#each desc}}
+                        <p>{{this}}</p>
+                        {{/each}}
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+
+    {{#if menu_builder.content.iced_drinks}}
+            <div>
+                <h3>{{menu_builder.content.iced_drinks.title}}</h3>
+                {{#each menu_builder.content.main.item_single}}
                 {{#if iced}}
                 <div class="item">
                     <p>{{name}}</p>
@@ -85,7 +97,7 @@
                 {{/if}}
                 {{/each}}
 
-                {{#each menu_builder.menu.content.coffee.item_multiple}}
+                {{#each menu_builder.content.main.item_multiple}}
                 {{#if iced}}
                 <div class="item">
                     <p>{{name}}</p>
@@ -97,33 +109,41 @@
                 {{/if}}
                 {{/each}}
 
-                {{#each menu_builder.menu.content.iced_drinks.items}}
+                {{#each menu_builder.content.iced_drinks.items}}
                 <div class="item">
                     <p>{{name}}</p>
                     <p>{{price}}</p>
                     <div class="description">
                         <!--item description-->
+                        {{#each desc}}
+                        <p>{{this}}</p>
+                        {{/each}}
                     </div>
                 </div>
                 {{/each}}
             </div>
+    {{/if}}
 
             <div>
-                <h3>{{menu_builder.menu.content.sodas_juices.title}}</h3>
-                {{#each menu_builder.menu.content.sodas_juices.items}}
+                <h3>{{menu_builder.content.fourth.title}}</h3>
+                {{#each menu_builder.content.fourth.items}}
                 <div class="item">
                     <p>{{name}}</p>
                     <p>{{price}}</p>
                     <div class="description">
                         <!--item description-->
+                        {{#each desc}}
+                        <p>{{this}}</p>
+                        {{/each}}
                     </div>
                 </div>
                 {{/each}}
             </div>
-
+            
+    {{#if menu_builder.content.add_ons}}
             <div>
-                <h3>{{menu_builder.menu.content.add_ons.title}}</h3>
-                {{#each menu_builder.menu.content.add_ons.items}}
+                <h3>{{menu_builder.content.add_ons.title}}</h3>
+                {{#each menu_builder.content.add_ons.items}}
                 <div class="item">
                     <p>{{name}}</p>
                     <p>{{price}}</p>
@@ -133,15 +153,23 @@
                 </div>
                 {{/each}}
             </div>
+    {{/if}}
+    
+    {{#if menu_builder.content.bonus}}
+            <div>
+                <h3>{{menu_builder.content.bonus.title}}</h3>
+                <p>{{menu_builder.content.bonus.desc}}</p>
+            </div>
+    {{/if}}
 
         </div>
     </div>
     <div id="info">
         <div>
-            <h3>{{menu_builder.menu.description.title}}</h3>
-            <span class={{menu_builder.menu.description.icon}}></span>
+            <h3>{{menu_builder.description.title}}</h3>
+            <span class={{menu_builder.description.icon}}></span>
             <div>
-                {{#each menu_builder.menu.description.desc}}
+                {{#each menu_builder.description.desc}}
                 <p>{{this}}</p>
                 {{/each}}
             </div>

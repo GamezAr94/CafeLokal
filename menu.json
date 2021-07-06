@@ -5,8 +5,8 @@
             "icon": "icon-N",
             "title": "Our Coffee",
             "desc": [
-                "At Lokal we are firm believers in espresso and we are proudly serving coffee from Casa del Caffe'.", 
-                "Our beans Espresso Roma are 100% arabica with a medium strenght, leaving a bold flavor on the palate.", 
+                "At Lokal we are firm believers in espresso and we are proudly serving coffee from Casa del Caffe'.",
+                "Our beans Espresso Roma are 100% arabica with a medium strenght, leaving a bold flavor on the palate.",
                 "Our decaf Dormi Bene is Swiss water processed and 97% caffeine free."
             ]
         },
@@ -32,8 +32,8 @@
                     }
                 ]
             },
-            "coffee": {
-                "title": "Coffee",
+            "main": {
+                "item_single_title": "Coffee",
                 "size": [
                     "S",
                     "M",
@@ -124,7 +124,7 @@
                     }
                 ]
             },
-            "tea_latte": {
+            "secondary": {
                 "title": "Tea Latte",
                 "items": [
                     {
@@ -144,7 +144,7 @@
                     }
                 ]
             },
-            "loose_leaf": {
+            "third": {
                 "title": "Loose Leaf Tea",
                 "items": [
                     {
@@ -193,11 +193,17 @@
                     },
                     {
                         "name": "Affogato al Caffe-Vanilla Gelato, Espresso",
-                        "price": 5.5
+                        "price": 5.5,
+                        "desc": [
+                            "• Add Baileys +3 •",
+                            "• Add Almond/Soy Milk +0.60 •",                        
+                            "• Add flavor shot +0.40 •",                        
+                            "• Add Ice Cream Scoop +2 •"
+                        ]
                     }
                 ]
             },
-            "sodas_juices": {
+            "fourth": {
                 "title": "Sodas and Juices",
                 "items": [
                     {
@@ -215,6 +221,180 @@
                     {
                         "name": "Orange Juice, Apple Juice",
                         "price": 2.25
+                    }
+                ]
+            }
+        }
+    },
+    "food": {
+        "title": "Food and Lunch",
+        "description": {
+            "icon": "icon-N",
+            "title": "Our Food",
+            "desc": [
+                "We offer sandwiches, panini, salads and soup, as well as small delicious bites.",
+                "Everything is made by order and only dressed with extra virgin olive oil and balsamic vinegar.",
+                "We only use fresh and locally sourced ingredients.",
+                "Our bread is vegan with no preservatives or stabilizers and locally supplied by Ble Bakery. We also carry gluten free bread from Little Northern Bakehouse.",
+                "Our Deli meat and cheese comes from Santa Barbara on Commercial Drive and our soup is made from scratch daily.",
+                "Our pastries are daily baked, often even in the afternoon to guarantee you the maximum of freshness. Weekends are for homemade Apple Tart and Tiramisu."
+            ]
+        },
+        "content": {
+            "bonus": {
+                "title": "Pastry",
+                "desc": "Our pastries are daily baked, often even in the afternoon to guarantee you the maximum of freshness. Weekends are for homemade Apple Tart and Tiramisu."
+            },
+            "main": {
+                "item_single_title": "Small Bites",
+                "item_multiple_title": "Soup",
+                "size": [
+                    "S",
+                    "L"
+                ],
+                "item_single": [
+                    {
+                        "name": "Multigrain Toast",
+                        "price": 4,
+                        "desc": [
+                            "2 Slices, Butter, Jam, Peanut Butter"
+                        ]
+                    },
+                    {
+                        "name": "Avocado Toast",
+                        "price": 3.00,
+                        "desc": [
+                            "2 Slices Multigrain, Avocado, Balsamic, Extra Virgin Olive Oil",
+                            "• Add One Boiled Egg +2 •",
+                            "• Pancetta or Prosciutto +3 •"
+                        ]
+                    },
+                    {
+                        "name": "Boursin Avocado Toastato",
+                        "price": 3.30,
+                        "desc": [
+                            "2 Slices Multigrain, Boursin, Avocado, Cherry Tomatos, Arugula, Balsamic, EV Olive Oil",
+                            "• Add One Boiled Egg +2 •",
+                            "• Pancetta or Prosciutto +3 •"
+                        ]
+                    },
+                    {
+                        "name": "Breakfast Croissant",
+                        "price": 3.60,
+                        "desc": [
+                            "Butter Croissant with Turkey and Cheese"
+                        ]
+                    },
+                    {
+                        "name": "Kids Panini",
+                        "price": 3.90,
+                        "desc": [
+                            "Ciabatta, Turkey, Cheese / or Cheese only"
+                        ]
+                    }
+                ],
+                "item_multiple": [
+                    {
+                        "name": "Roasted Vegetable",
+                        "price": [
+                            4,
+                            6
+                        ],
+                        "desc": [
+                            "Served with Pesto and Crostini",
+                            "• Add Half Panini +6 •",
+                            "• Add Small House Salad +6 •",
+                            "• Add 1 Slice Avocado Toast +5 •",
+                            "• Add 1 Slice Boursin Avocado Toast +6.5 •"
+                        ]
+                    }
+                ]
+            },
+            "secondary": {
+                "title": "Salads",
+                "desc": "Our salads are dressed with balsamic vinegar and extra virgin olive oil",
+                "items": [
+                    {
+                        "name": "House Salad",
+                        "price": "6/8",
+                        "desc": [
+                            "Organic greens, cherry tomatos, green olives"
+                        ]
+                    },
+                    {
+                        "name": "Blue Cheese",
+                        "price": 9.5,
+                        "desc": [
+                            "Organic spinach, organic arugula, blue cheese, pears, toasted walnuts"
+                        ]
+                    },
+                    {
+                        "name": "Arugula",
+                        "price": 9.5,
+                        "desc": [
+                            "Roasted San Marzano tomatos, organic arugula, shaved Grana Padano, toasted sunflower seeds",
+                            "• Add One Boiled Egg +2/Pancetta or Prosciutto +3 •"
+                        ]
+                    },
+                    {
+                        "name": "Avocado",
+                        "price": 9.5,
+                        "desc": [
+                            "Organic mixed greens, avocado, cherry tomatos, green olives"
+                        ]
+                    }
+                ]
+            },
+            "third": {
+                "title": "Sandwiches",
+                "desc": "Our Sandwiches and Panini are dressed with balsamic vinegar and extra virgin olive oil",
+                "items": [
+                    {
+                        "name": "Turkey Club",
+                        "price": 10,
+                        "desc": [
+                            "Crispy pancetta, turkey, tomatos, organic greens, Dijon mustard, mayo, toasted multigrain bread"
+                        ]
+                    },
+                    {
+                        "name": "Prosciutto",
+                        "price": 3.4,
+                        "desc": [
+                            "Pears, Cambozola cheese, prosciutto, organic arugula, toasted walnuts, and warm filone bread"
+                        ]
+                    }
+                ]
+            },
+            "fourth": {
+                "title": "Panini",
+                "items": [
+                    {
+                        "name": "Sundried Tomato",
+                        "price": 10,
+                        "desc": [
+                            "Herb and garlic Boursin cheese, sundried tomatos, organic spinach, organic arugula, ciabatta"
+                        ]
+                    },
+                    {
+                        "name": "Spicy Salami",
+                        "price": 10,
+                        "desc": [
+                            "Provolone cheese, spicy salami, artichokes, roasted red peppers, spicy eggplant, ciabatta"
+                        ]
+                    },
+                    {
+                        "name": "Roasted Veggies",
+                        "price": 10,
+                        "desc": [
+                            "Mozzarella cheese, roasted eggplant, artichokes, roasted red peppers, spicy eggplant, ciabatta"
+                        ]
+                    },
+                    {
+                        "name": "The Green",
+                        "price": 10,
+                        "desc": [
+                            "Smoked Gouda, pesto, mayo, avocado, artichokes, spicy eggplant, organic spinach, organic arugula, ciabatta"
+                        ]
                     }
                 ]
             }
