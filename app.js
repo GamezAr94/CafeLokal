@@ -8,6 +8,7 @@ var sassMiddleware = require('node-sass-middleware');
 var indexRouter = require('./routes/index');
 var coffeeRouter = require('./routes/coffee');
 var foodRouter = require('./routes/food');
+var drinksRouter = require('./routes/drinks');
 var usersRouter = require('./routes/users');
 
 const { FALSE } = require('node-sass');
@@ -33,6 +34,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/coffee', coffeeRouter);
 app.use('/food', foodRouter);
+app.use('/drinks', drinksRouter);
 app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler

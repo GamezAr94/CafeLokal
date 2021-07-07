@@ -374,15 +374,17 @@ footer {
     flex-direction: column;
     width: 80%;
     display: flex;
-    margin: auto; }
+    margin: 0 auto 5rem auto; }
     #background #container #title {
       display: flex;
       width: 100%;
       justify-content: space-around;
       flex-direction: row; }
       #background #container #title h1 {
+        width: 70%;
+        display: block;
         font-size: 2.9rem;
-        margin: auto 0px;
+        margin: auto auto;
         text-align: center;
         font-family: apple; }
       #background #container #title h1::before, #background #container #title h1::after {
@@ -404,7 +406,7 @@ footer {
       #background #container #board .multiple .sizes {
         display: flex;
         flex-direction: row;
-        width: 7.5rem;
+        width: 7rem;
         min-width: 0;
         margin: 0 0 0 auto; }
         #background #container #board .multiple .sizes p {
@@ -453,7 +455,7 @@ footer {
         transition: .3s; }
   #background #info {
     background-color: #232323c0;
-    margin: 5em auto;
+    margin: 0 auto 5em auto;
     width: 85%;
     padding: 2em 0;
     color: white; }
@@ -509,8 +511,8 @@ footer {
     #background #container #title {
       margin-bottom: -1rem; }
       #background #container #title h1 {
-        font-size: 1.2rem;
-        white-space: nowrap; }
+        font-size: 1.7rem;
+        line-height: 2.3; }
   #info h3 {
     font-size: 2em;
     text-align: center;
