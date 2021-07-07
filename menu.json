@@ -11,7 +11,7 @@
             ]
         },
         "content": {
-            "main": {
+            "coffee": {
                 "title": "Coffee",
                 "items": [
                     {
@@ -44,7 +44,7 @@
                     }
                 ]
             },
-            "multiple": {
+            "coffee_multiple": {
                 "title": "",
                 "class": "multiple",
                 "size": [
@@ -95,7 +95,7 @@
                     }
                 ]
             },
-            "secondary": {
+            "tea_latte": {
                 "title": "Tea Latte",
                 "items": [
                     {
@@ -115,7 +115,7 @@
                     }
                 ]
             },
-            "third": {
+            "Loose_leaf": {
                 "title": "Loose Leaf Tea",
                 "items": [
                     {
@@ -178,26 +178,26 @@
                     },
                     {
                         "name": "Mocha",
-                        "prices": 4.7
+                        "price": 4.7
                     },
                     {
                         "name": "Chocolate",
                         "desc": [
                             "Sweet, Mix, or Dark"
                         ],
-                        "prices": 3.5
+                        "price": 3.5
                     },
                     {
                         "name": "Latte",
-                        "prices": 4.2
+                        "price": 4.2
                     },
                     {
                         "name": "Americano",
-                        "prices": 3.1
+                        "price": 3.1
                     }
                 ]
             },
-            "fourth": {
+            "sodas_juices": {
                 "title": "Sodas and Juices",
                 "items": [
                     {
@@ -255,7 +255,7 @@
                 "Our pastries are daily baked, often even in the afternoon to guarantee you the maximum of freshness. Weekends are for homemade Apple Tart and Tiramisu."
             ]
         },
-        "content": {
+        "small_bites": {
             "main": {
                 "title": "Small Bites",
                 "items": [
@@ -300,7 +300,7 @@
                     }
                 ]
             },
-            "multiple": {
+            "soup": {
                 "title": "Soup",
                 "class": "multiple",
                 "size": [
@@ -324,7 +324,7 @@
                     }
                 ]
             },
-            "secondary": {
+            "salads": {
                 "title": "Salads",
                 "desc": "Our salads are dressed with balsamic vinegar and extra virgin olive oil",
                 "items": [
@@ -362,7 +362,7 @@
                     }
                 ]
             },
-            "third": {
+            "sandwiches": {
                 "title": "Sandwiches",
                 "desc": "Our Sandwiches and Panini are dressed with balsamic vinegar and extra virgin olive oil",
                 "items": [
@@ -382,7 +382,7 @@
                     }
                 ]
             },
-            "fourth": {
+            "panini": {
                 "title": "Panini",
                 "items": [
                     {
@@ -429,7 +429,7 @@
             "desc": []
         },
         "content": {
-            "main": {
+            "small_bite_evening": {
                 "title": "Small Bites",
                 "desc": "Sundried Tomatos, Spinach, Herbs and Garlic Boursin Prosciutto, Cambozola, Arugula and Balsamic reduction Honey, Pears, Blue Cheese and Walnuts",
                 "items": [
@@ -443,7 +443,7 @@
                     }
                 ]
             },
-            "multiple": {
+            "wine_rose": {
                 "title": "Wines - Rose'",
                 "class": "multiple",
                 "size": [
@@ -497,7 +497,7 @@
                     }
                 ]
             },
-            "red": {
+            "wine_red": {
                 "title": "Wines - Red'",
                 "class": "multiple",
                 "size": [
@@ -535,7 +535,7 @@
                     }
                 ]
             },
-            "white": {
+            "wine_white": {
                 "title": "Wines - White'",
                 "class": "multiple",
                 "size": [
@@ -582,7 +582,7 @@
                     }
                 ]
             },
-            "secondary": {
+            "beers": {
                 "title": "Beers",
                 "items": [
                     {
@@ -622,7 +622,7 @@
                     }
                 ]
             },
-            "third": {
+            "highballs": {
                 "title": "Highballs",
                 "items": [
                     {
@@ -631,7 +631,7 @@
                     }
                 ]
             },
-            "fourth": {
+            "aperitif": {
                 "title": "Aperitif",
                 "items": [
                     {
