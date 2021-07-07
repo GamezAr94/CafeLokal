@@ -255,8 +255,8 @@
                 "Our pastries are daily baked, often even in the afternoon to guarantee you the maximum of freshness. Weekends are for homemade Apple Tart and Tiramisu."
             ]
         },
-        "small_bites": {
-            "main": {
+        "content": {
+            "small_bites": {
                 "title": "Small Bites",
                 "items": [
                     {
