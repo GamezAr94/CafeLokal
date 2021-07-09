@@ -255,6 +255,7 @@
                 "Our pastries are daily baked, often even in the afternoon to guarantee you the maximum of freshness. Weekends are for homemade Apple Tart and Tiramisu."
             ]
         },
+        "icon": "icon-d3",
         "content": {
             "small_bites": {
                 "title": "Small Bites",
@@ -303,6 +304,7 @@
             "soup": {
                 "title": "Soup",
                 "class": "multiple",
+                "icon": "icon-d4",
                 "size": [
                     "S",
                     "L"
@@ -364,6 +366,7 @@
             },
             "sandwiches": {
                 "title": "Sandwiches",
+                "icon": "icon-d1",
                 "desc": "Our Sandwiches and Panini are dressed with balsamic vinegar and extra virgin olive oil",
                 "items": [
                     {
@@ -416,6 +419,7 @@
                 ]
             },
             "bonus": {
+                "icon": "icon-d2",
                 "title": "Pastry",
                 "desc": "Our pastries are daily baked, often even in the afternoon to guarantee you the maximum of freshness. Weekends are for homemade Apple Tart and Tiramisu."
             }
@@ -423,6 +427,7 @@
     },
     "drinks": {
         "title": "Evening and Drinks",
+        "icon": "label",
         "description": {
             "icon": "",
             "title": "",

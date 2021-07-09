@@ -2,8 +2,13 @@
     <div id="container">
         <div id="title">
             <h1>{{title}}</h1>
-            {{!-- <span class="icon-d2"></span> --}}
+            {{#if menu_builder.icon}}
+            <span class={{menu_builder.icon}}>
+            </span>
+            {{else}}
+            <p>{{menu_builder.icons}}</p>
             <span><img id="doodle" src="images/doodles/Cafecito.png" alt=""></span>
+            {{/if}}
         </div>
         <div id="board">
 
@@ -11,7 +16,7 @@
             <div class={{this.class}}>
                 <h3>{{this.title}}</h3>
                 <p>{{this.desc}}</p>
-
+                
                 <div class="sizes">
                     {{#each this.size}}
                     <p>{{this}}</p>
@@ -38,6 +43,11 @@
                     </div>
                 </div>
                 {{/each}}
+
+                {{#if this.icon}}
+                <span class="{{this.icon}} doodle"></span>
+                {{/if}}
+
             </div>
             {{/each}}
 

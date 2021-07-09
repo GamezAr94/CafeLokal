@@ -28,7 +28,7 @@
             justify-content: space-around;
             flex-direction: row;
             h1{
-                width: 70%;
+                width: 65%;
                 display: block;
                 font-size: 2.9rem;
                 margin: auto auto;
@@ -42,10 +42,44 @@
                 margin: auto .5rem;
             }
             span{
+                margin: 0 auto;
                 font-size: 8rem;
             }
             #doodle{
                 width: 7rem;
+            }
+            .label{
+                border: 1px dashed white;
+                font-size: 1.4em;
+                width: fit-content;
+                text-align: center;
+                padding: .5em;
+                margin: 1em auto;
+                animation: twist 1.5s ease-out .3s 1 normal forwards, pump 2s ease-out 1.8s infinite alternate-reverse forwards;
+                transform: rotateZ(10deg)scale(.8);
+                p{
+                    font-family: varta;
+                    margin: 0;
+                    strong{
+                        text-decoration: underline;
+                    }
+                }
+            }
+            @keyframes twist {
+                0%{
+                    transform:rotateZ(10deg) scale(.8);
+                }
+                100%{
+                    transform: rotateZ(-10deg)scale(1);
+                }
+            }
+            @keyframes pump {
+                0%{
+                    transform:scale(.8)rotateZ(-10deg);
+                }
+                100%{
+                    transform: scale(1)rotateZ(-10deg);
+                }
             }
         }
         #board{
@@ -83,6 +117,13 @@
             div{
                 height: fit-content;
                 min-width: 300px;
+                .doodle{
+                    display: flex;
+                    font-size: 7em;
+                    width: fit-content;
+                    margin: 0 auto;
+                    justify-content: center;
+                }
                 .item{
                     display: grid;
                     grid-template-columns: auto 3.7rem;
@@ -182,6 +223,10 @@
             width: 75%;
             #title{
                 flex-direction: column;
+                h1{
+                    font-size: 1.7rem;
+                    line-height: 2.3;
+                }
                 span{
                     width: fit-content;
                     margin: auto;
