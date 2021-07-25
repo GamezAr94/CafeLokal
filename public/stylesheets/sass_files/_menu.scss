@@ -70,7 +70,7 @@
                     transform:rotateZ(10deg) scale(.8);
                 }
                 100%{
-                    transform: rotateZ(-10deg)scale(1);
+                    transform: rotateZ(-10deg)scale(.9);
                 }
             }
             @keyframes pump {
@@ -78,7 +78,7 @@
                     transform:scale(.8)rotateZ(-10deg);
                 }
                 100%{
-                    transform: scale(1)rotateZ(-10deg);
+                    transform: scale(.9)rotateZ(-10deg);
                 }
             }
         }
@@ -164,11 +164,58 @@
             }
         }
     }
-    #info{
+    .black{
         background-color: #232323c0;
         margin: 0 auto 5em auto;
         width: 85%;
         padding: 2em 0;
+    }
+    .header{
+        width: 30%;
+        min-width: 240px;
+        margin: 0rem auto;
+        padding-top: 1rem;
+        h1{
+            text-align: center;
+            font-size: 3.1rem;
+            margin: 0;
+            color: black;
+        }
+        h1::before, h1::after{
+            content: '●';
+            color: rgb(139, 79, 0);
+            flex-direction: column;
+            font-size: 1.5rem;
+            margin: auto .5rem;
+        }
+    }
+    .body{
+        width: 75%;
+        padding: 2.5rem 3rem;
+        margin: 3rem auto;
+        p{
+            color: black;
+            font-family: varta-midum;
+            font-size: 1.3rem;
+        }
+        #cursive{
+            width: 45%;
+            min-width: 250px;
+            font-weight: bold;
+            margin: auto;
+            font-family: apple;
+            text-align: center;
+            font-size: 1.8rem;
+            line-height: 3.5rem;
+        }
+    }
+    .blank{
+        box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.86);
+        -webkit-box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.86);
+        -moz-box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.86);
+        background-color: #ffffffd5;
+    }
+    #info{
         color: white;
         h3{
             font-family: apple;
@@ -252,6 +299,28 @@
                     font-size: 1.7rem;
                     line-height: 2.3;
                 }
+            }
+        }
+        .header{
+            padding-top: .7rem;
+            h1{
+                font-size: 2rem;
+            }
+        }
+        .body{
+            width: 60%;
+            padding: 1rem 3rem;
+            margin: 2.5rem auto;
+            p{
+                color: black;
+                font-family: varta-midum;
+                font-size: 1.2rem;
+            }
+            #cursive{
+                width: 100%;
+                min-width: 130px;
+                font-size: 1.3rem;
+                line-height: 2.5rem;
             }
         }
     }
