@@ -6,6 +6,7 @@ const menu_list = document.getElementById('menuList');
 const header = document.getElementsByTagName('header');
 const main_logo = document.getElementById('logo');
 const label_class = document.getElementsByClassName('label');
+const events_img = document.getElementById('eventImg');
 
 const header_limit = 80;
 
@@ -36,3 +37,7 @@ if (label_class[0]) {
     const text_label = '<p>Join us for <strong>Happy Hour daily!</strong></p><p>from 3pm to 6pm</p>';
     label_class[0].innerHTML = text_label;
 }
+
+events_img.addEventListener('click', function () {
+    events_img.classList?.toggle('zoom-in');
+});

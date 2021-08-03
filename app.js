@@ -10,7 +10,7 @@ var coffeeRouter = require('./routes/coffee');
 var foodRouter = require('./routes/food');
 var drinksRouter = require('./routes/drinks');
 var aboutRouter = require('./routes/about');
-
+var eventsRouter = require('./routes/events');
 var usersRouter = require('./routes/users');
 
 const { FALSE } = require('node-sass');
@@ -38,6 +38,7 @@ app.use('/coffee', coffeeRouter);
 app.use('/food', foodRouter);
 app.use('/drinks', drinksRouter);
 app.use('/about', aboutRouter);
+app.use('/events', eventsRouter);
 app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
