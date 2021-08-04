@@ -1,0 +1,151 @@
+#recycledTexture{
+    margin: 0;
+    transition: .3s;
+    padding: 15rem 0 .1rem 0;
+    width: 100%;
+    background-attachment: fixed;
+    background-image: url(../../images/textures/recycledPaper.jpeg);
+    background-size: 100%;
+    #card_container{
+
+        box-shadow: 0px 0px 12px 5px rgba(0,0,0,0.61);
+        -webkit-box-shadow: 0px 0px 12px 5px rgba(0,0,0,0.61);
+        -moz-box-shadow: 0px 0px 12px 5px rgba(0,0,0,0.61);
+
+        background-color: rgba(255, 255, 255, 0.856);
+        width: 70%;
+        margin: 0 auto 5rem auto;
+        padding: 2rem 0;
+        h2, span{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            color: #6e5f4d;
+        }
+        h2::before, h2::after{
+            content: '●';
+            font-size: 1.1rem;
+            margin: 0 .5rem;
+            transform: translateY(60%);
+            height: .5rem;
+            width: 1rem;
+        }
+        h2{
+            text-align: center;
+            font-size: 2rem;
+            font-family: varta;
+            font-weight: 10;
+            word-spacing: 10px;
+            letter-spacing: 10px;
+        }
+        span{
+            font-size: 3.3rem;
+
+        }
+        .underline{
+            border: 1px solid #6e5f4d;
+            width: 15%;
+            margin: 0 auto;
+        }
+        form{
+            display: flex;
+            width: 85%;
+            margin: 2rem auto 0 auto;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            div{
+                margin: .9rem 0;
+                input, textarea{
+                    width: 100%;
+                    font-size: 1rem;
+                    font-family: varta;
+                    font-weight: 10;
+                    border: none;
+                    border-bottom: .5px solid #6e5f4d;
+                    padding: 0 0 .5rem 0;
+                    margin: 0;
+                    background-color: rgba(255, 255, 255, 0);
+                    resize: none;
+                    transition: .3s;
+                    height: 20px;
+                }
+                textarea:focus{
+                    height: 90px;
+                    transition: .3s;
+                    padding: 0 0 0 10px 0;
+                }
+                textarea:focus, input:focus{
+                    outline: none;
+                }
+            }
+            .name, .email{
+                width: 45%;
+            }
+            .subject, .message{
+                width: 100%;
+            }
+            .submit{
+                border: .5px solid #6e5f4d;
+                margin: 1.5rem auto 0 auto;
+                padding: 1.3rem 1.8rem;
+                transition: .3s;
+                color: #6e5f4d;
+                cursor: pointer;
+                input{
+                    cursor: pointer;
+                    border: none;
+                    font-weight: bold;
+                }
+            }
+            .submit:hover{
+                cursor: pointer;
+                background-color: #52483c;
+                transition: .3s;
+                input{
+                    cursor: pointer;
+                    color: white;
+                }
+            }
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 650px) and (min-width: 501px){
+    #recycledTexture{
+        
+        #card_container{
+            width: 80%;
+            h2{
+                text-align: center;
+                font-size: 1.6rem;
+                font-family: varta;
+                font-weight: 10;
+                word-spacing: 10px;
+                letter-spacing: 10px;
+            }
+            span{
+                font-size: 2.6rem;
+            }
+            .underline{
+                border: .6px solid #6e5f4d;
+                width: 13%;
+            }
+
+            form{
+                .name, .email{
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+}
+@media only screen and (max-width: 500px) and (min-width: 0px){
+    #recycledTexture{
+        padding: 10rem 0 .1rem 0;
+        #card_container{
+            width: 90%;
+        }
+    }
+}

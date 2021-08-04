@@ -10,11 +10,11 @@ const events_img = document.getElementById('eventImg');
 
 const header_limit = 80;
 
-main_logo.addEventListener('click', () => window.location = "/")
+main_logo?.addEventListener('click', () => window.location = "/")
 
 header[0].classList.contains('down') ? header[0].style.marginTop = 7 + "vh" : header[0].style.marginTop = 5 + "vh";
 
-document.addEventListener('scroll', () => {
+document?.addEventListener('scroll', () => {
     if (window.pageYOffset >= header_limit) {
         header[0].style.marginTop = 5 + "vh";
         header[0].classList.add('down');
@@ -26,7 +26,7 @@ document.addEventListener('scroll', () => {
     }
 });
 
-menu_container.addEventListener('click', function () {
+menu_container?.addEventListener('click', function () {
     hamburger_menu.classList.toggle('close');
     hamburger_menu.classList.toggle('open');
     menu_list.classList.toggle('show');
@@ -38,6 +38,4 @@ if (label_class[0]) {
     label_class[0].innerHTML = text_label;
 }
 
-events_img.addEventListener('click', function () {
-    events_img.classList?.toggle('zoom-in');
-});
+events_img?.addEventListener('click', () => events_img.classList?.toggle('zoom-in') );
