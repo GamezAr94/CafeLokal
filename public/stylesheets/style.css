@@ -742,12 +742,7 @@ footer {
   #recycledTexture #card_container {
     width: 80%; }
     #recycledTexture #card_container h2 {
-      text-align: center;
-      font-size: 1.6rem;
-      font-family: varta;
-      font-weight: 10;
-      word-spacing: 10px;
-      letter-spacing: 10px; }
+      font-size: 1.6rem; }
     #recycledTexture #card_container span {
       font-size: 2.6rem; }
     #recycledTexture #card_container .underline {
@@ -760,7 +755,16 @@ footer {
   #recycledTexture {
     padding: 10rem 0 .1rem 0; }
     #recycledTexture #card_container {
-      width: 90%; } }
+      width: 90%; }
+      #recycledTexture #card_container h2 {
+        font-size: 1.6rem; }
+      #recycledTexture #card_container span {
+        font-size: 2.6rem; }
+      #recycledTexture #card_container .underline {
+        border: .6px solid #6e5f4d;
+        width: 13%; }
+      #recycledTexture #card_container form .name, #recycledTexture #card_container form .email {
+        width: 100%; } }
 
 * {
   font-family: varta; }
